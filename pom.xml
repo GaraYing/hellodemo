@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<!-- 来源于超级pom  lib\maven-model-builder-3.5.2\org\apache\maven\model -->
 	<modelVersion>4.0.0</modelVersion>
-
+	<!-- 域名gara.com -->
 	<groupId>com.gara</groupId>
+	<!-- 功能命名 -->
 	<artifactId>hellodemo</artifactId>
+	<!-- 版本信息 -->
 	<version>0.0.1-SNAPSHOT</version>
+	<!-- 默认是jar包 jar/war/maven-plugin -->
 	<packaging>war</packaging>
 
 	<name>hellodemo</name>
@@ -57,6 +61,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>
