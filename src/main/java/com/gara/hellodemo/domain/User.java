@@ -1,22 +1,27 @@
 package com.gara.hellodemo.domain;
 
-import javax.persistence.Id;
+import java.io.Serializable;
+import java.util.Date;
 
-public class User {
-    @Id
+public class User implements Serializable {
     private String userId;
-//    @NotEmpty
     private String userName;
-//    @NotEmpty
     private Integer age;
+
+    private Date birthday;
+
+    private transient String gender;
+
 
     public User() {
     }
 
-    public User(String userId, String userName, Integer age) {
+    public User(String userId, String userName, Integer age, Date birthday, String gender) {
         this.userId = userId;
         this.userName = userName;
         this.age = age;
+        this.birthday = birthday;
+        this.gender = gender;
     }
 
     public String getUserId() {
@@ -41,5 +46,32 @@ public class User {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", age=" + age +
+                ", birthday=" + birthday +
+                ", gender='" + gender + '\'' +
+                '}';
     }
 }
