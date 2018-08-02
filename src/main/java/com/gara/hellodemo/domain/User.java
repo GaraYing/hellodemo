@@ -7,11 +7,8 @@ public class User implements Serializable {
     private String userId;
     private String userName;
     private Integer age;
-
     private Date birthday;
-
     private transient String gender;
-
 
     public User() {
     }

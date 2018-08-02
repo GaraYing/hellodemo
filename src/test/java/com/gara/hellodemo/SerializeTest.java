@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * @program: hellodemo
+ * @program: SerializeTest
  * @description: Java序列化测试类
  * @author: GaraYing
  * @create: 2018-07-31 16:25
