@@ -1,5 +1,8 @@
 package com.gara.hellodemo.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -7,6 +10,8 @@ public class User implements Serializable {
     private String userId;
     private String userName;
     private Integer age;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date birthday;
     private transient String gender;
 

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -19,6 +20,7 @@ public class UserController extends BaseController {
         User user = new User();
         user.setUserId(UUID.randomUUID().toString());
         user.setUserName("张三");
+        user.setBirthday(new Date());
         user.setAge(24);
         return user;
     }

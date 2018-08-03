@@ -1,10 +1,13 @@
 package com.gara.hellodemo.Proxy;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import org.omg.IOP.ExceptionDetailMessage;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * @description: 月老 小哥哥加点注释吧~
@@ -25,7 +28,10 @@ public class MoonOlder implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
-        System.out.println("---------------------");
+        long startTime = System.currentTimeMillis();
+        new SimpleDateFormat("yyyy-MM-da HH:mm:ss").format(startTime);
+
+        System.out.println("----------"+new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(startTime)+"-----------");
         System.out.println("我是月老：你的性别是"+this.target.getSex()+"  得给你找一个异性才行");
         System.out.println("开始进行海选*********");
         this.target.findLove();

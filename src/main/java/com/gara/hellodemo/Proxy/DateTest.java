@@ -12,6 +12,9 @@ public class DateTest {
 //        new WangErXiao().findLove();
         try {
             Person person = (Person)new MoonOlder().getInstance(new WangErXiao());
+
+            System.out.println(person.getClass());
+
             person.findLove();
             /* 原理：
              1. 拿到代理被对象得引用，同时获取到它的接口
