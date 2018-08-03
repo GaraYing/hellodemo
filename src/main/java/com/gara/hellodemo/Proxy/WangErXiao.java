@@ -5,10 +5,10 @@ package com.gara.hellodemo.Proxy;
  * @author: GaraYing
  * @create: 2018-08-02 19:51
  **/
-public class WangErXiao implements Person{
+public class WangErXiao implements Person {
 
     private String name = "王二小";
-    private String sex ="男";
+    private String sex = "男";
 
     public void setName(String name) {
         this.name = name;
@@ -22,7 +22,7 @@ public class WangErXiao implements Person{
     public void findLove() {
         System.out.println("========================");
 
-        System.out.println("我叫："+this.name +"  性别："+this.sex);
+        System.out.println("我叫：" + this.name + "  性别：" + this.sex);
         System.out.println("找对象要求不高");
         System.out.println("白富美");
         System.out.println("温柔体贴贤惠");

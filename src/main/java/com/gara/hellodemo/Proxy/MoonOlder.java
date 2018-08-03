@@ -22,7 +22,7 @@ public class MoonOlder implements InvocationHandler {
 
         this.target = target;
         Class clazz = target.getClass();
-        return Proxy.newProxyInstance(clazz.getClassLoader(),clazz.getInterfaces(),this);
+        return Proxy.newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), this);
     }
 
     @Override
@@ -31,8 +31,8 @@ public class MoonOlder implements InvocationHandler {
         long startTime = System.currentTimeMillis();
         new SimpleDateFormat("yyyy-MM-da HH:mm:ss").format(startTime);
 
-        System.out.println("----------"+new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(startTime)+"-----------");
-        System.out.println("我是月老：你的性别是"+this.target.getSex()+"  得给你找一个异性才行");
+        System.out.println("----------" + new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(startTime) + "-----------");
+        System.out.println("我是月老：你的性别是" + this.target.getSex() + "  得给你找一个异性才行");
         System.out.println("开始进行海选*********");
         this.target.findLove();
         System.out.println("这么合适， 那就在一起把~~");

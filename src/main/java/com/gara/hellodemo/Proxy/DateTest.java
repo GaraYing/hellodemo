@@ -11,10 +11,8 @@ public class DateTest {
     public static void main(String[] args) {
 //        new WangErXiao().findLove();
         try {
-            Person person = (Person)new MoonOlder().getInstance(new WangErXiao());
-
+            Person person = (Person) new MoonOlder().getInstance(new WangErXiao());
             System.out.println(person.getClass());
-
             person.findLove();
             /* 原理：
              1. 拿到代理被对象得引用，同时获取到它的接口
@@ -23,7 +21,7 @@ public class DateTest {
              4. 重新动态生成一个class字节码
              5. 然后编译
              */
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
