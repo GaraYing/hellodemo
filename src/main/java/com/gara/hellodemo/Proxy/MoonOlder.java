@@ -34,7 +34,10 @@ public class MoonOlder implements InvocationHandler {
         System.out.println("----------"+new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(startTime)+"-----------");
         System.out.println("我是月老：你的性别是"+this.target.getSex()+"  得给你找一个异性才行");
         System.out.println("开始进行海选*********");
-        this.target.findLove();
+//        this.target.findLove();
+
+        method.invoke(this.target,args);
+
         System.out.println("这么合适， 那就在一起把~~");
         System.out.println("---------------------");
         return null;
