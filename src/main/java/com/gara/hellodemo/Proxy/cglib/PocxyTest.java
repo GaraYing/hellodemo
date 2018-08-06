@@ -21,6 +21,9 @@ public class PocxyTest {
         try {
 //            Class clazz  = Son.class;
             Object object = (LiuNeng)new MoonOlder().getInstance(new LiuNeng());
+
+            object = (LiuNeng)new MoonOlder().getInstance(LiuNeng.class);
+
             ((LiuNeng) object).findlove();
         } catch (Exception e) {
             e.printStackTrace();

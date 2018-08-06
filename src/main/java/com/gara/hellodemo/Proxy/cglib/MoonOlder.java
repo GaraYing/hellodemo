@@ -14,11 +14,11 @@ import java.text.SimpleDateFormat;
  **/
 public class MoonOlder implements MethodInterceptor {
 
-    public Object getInstance(Object className) throws Exception{
+    public Object getInstance(Class className) throws Exception{
         //反射机制实例化
         Enhancer enhancer = new Enhancer();
         // 父类设置
-        enhancer.setSuperclass(className.getClass());
+        enhancer.setSuperclass(className);
         enhancer.setCallback(this);
         return enhancer.create();
     }
@@ -34,6 +34,11 @@ public class MoonOlder implements MethodInterceptor {
         System.out.println("开始进行海选*********");
 
 //        method.invoke(o,objects)); // 这里会发生死循环
+
+        // 这个obj引用cglib给我们new出来的
+        // cglib new 出来的对象是被代理对象的子类（集成了我们自己写的那个类）
+        // OOP，在 new 子类中之前，实际上默认调用了弗雷德ｓｕｐｅｒ（）方法
+        // ｎｅｗ子类的同时，必须先ｎｅｗ出来父类，这就相当于是间接持有了父类的引用
         methodProxy.invokeSuper(o,objects);
 //        this.target.findLove();
 
