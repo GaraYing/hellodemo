@@ -10,9 +10,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class HelloDemoApplicationTests {
 
 
-	@Test
-	public void contextLoads() {
-		System.out.println("没有任何关系");
-	}
+    @Test
+    public void contextLoads() {
+        System.out.println("没有任何关系");
+    }
 
 }

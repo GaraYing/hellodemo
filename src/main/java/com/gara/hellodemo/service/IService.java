@@ -6,5 +6,5 @@ package com.gara.hellodemo.service;
  * @create: 2018-08-01 15:27
  **/
 public interface IService {
-    public String checkParms(String... params);
+    String checkParms(String... params);
 }

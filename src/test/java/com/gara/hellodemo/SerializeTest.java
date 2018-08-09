@@ -27,12 +27,12 @@ public class SerializeTest {
 
         ObjectOutputStream oos = null;
 
-        try{
+        try {
             oos = new ObjectOutputStream(new FileOutputStream("tempfile"));
             oos.writeObject(user);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             IOUtils.closeQuietly(oos);
         }
 
@@ -43,11 +43,11 @@ public class SerializeTest {
             ois = new ObjectInputStream(new FileInputStream(file));
             User newUser = (User) ois.readObject();
             System.out.println(newUser);
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-        }catch (ClassNotFoundException e){
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             IOUtils.closeQuietly(ois);
             try {
                 FileUtils.forceDelete(file);

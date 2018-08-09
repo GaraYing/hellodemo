@@ -7,7 +7,7 @@ package com.gara.hellodemo.Proxy.cglib;
  **/
 public class LiuNeng {
 
-    public void findlove(){
+    public void findlove() {
         System.out.println("要求很简单，投缘就行");
     }
 }

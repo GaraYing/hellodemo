@@ -12,7 +12,7 @@ import java.util.Map;
  **/
 public class BaseController {
 
-    public Map<String, Object> initMessage(){
+    public Map<String, Object> initMessage() {
         Map<String, Object> map = new LinkedHashMap<String, Object>();
         map.put("success", true);
         map.put("error", null);
@@ -23,6 +23,7 @@ public class BaseController {
 
     /**
      * 出错
+     *
      * @param error
      * @param errorCode
      * @param map

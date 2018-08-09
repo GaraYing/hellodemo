@@ -18,7 +18,7 @@ public class MoonOlder implements InvocationHandler {
 
     private Person target;
 
-    public Object getInstance(Person target) throws Exception {
+    public Object getInstance(Person target) {
 
         this.target = target;
         Class clazz = target.getClass();
@@ -36,7 +36,7 @@ public class MoonOlder implements InvocationHandler {
         System.out.println("开始进行海选*********");
 //        this.target.findLove();
 
-        method.invoke(this.target,args);
+        method.invoke(this.target, args);
 
         System.out.println("这么合适， 那就在一起把~~");
         System.out.println("---------------------");

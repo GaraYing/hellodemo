@@ -22,9 +22,9 @@ public class PocxyTest {
 //            Class clazz  = Son.class;
 //            Object object = (LiuNeng)new MoonOlder().getInstance(new LiuNeng());
 
-            Object  object = (LiuNeng)new MoonOlder().getInstance(LiuNeng.class);
-
+            Object object = new MoonOlder().getInstance(LiuNeng.class);
             ((LiuNeng) object).findlove();
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
