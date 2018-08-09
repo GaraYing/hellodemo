@@ -28,6 +28,7 @@ public class UserController extends BaseController {
         user.setUserId(UUID.randomUUID().toString());
         user.setUserName("张三");
         user.setBirthday(new Date());
+        user.setGender("男");
         user.setAge(24);
         return user;
     }

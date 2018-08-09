@@ -1,5 +1,7 @@
 package com.gara.hellodemo.design_pattern.factory;
 
+import org.springframework.util.StringUtils;
+
 /**
  * @description: 简单工厂类测试
  * @author: GaraYing
@@ -8,7 +10,7 @@ package com.gara.hellodemo.design_pattern.factory;
 
 public class SimpleFactoryTest {
     public static void main(String[] args) {
-        Car car = new SimpleFactory().getCar("bmw");
-        System.out.println(car.getCar());
+        Car car = new SimpleFactory().getCar("ddd");
+        System.out.println(car!=null?car.getCar():"未匹配");
     }
 }
