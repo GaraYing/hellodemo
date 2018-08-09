@@ -1,6 +1,4 @@
-package com.gara.hellodemo.Proxy;
-
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
+package com.gara.hellodemo.design_pattern.proxy;
 
 /**
  * @description: 接口测试类 小哥哥加点注释吧~

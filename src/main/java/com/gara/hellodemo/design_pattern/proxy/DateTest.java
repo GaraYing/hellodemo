@@ -1,6 +1,4 @@
-package com.gara.hellodemo.Proxy;
-
-import java.lang.management.MonitorInfo;
+package com.gara.hellodemo.design_pattern.proxy;
 
 /**
  * @description: 测试类 小哥哥加点注释吧~

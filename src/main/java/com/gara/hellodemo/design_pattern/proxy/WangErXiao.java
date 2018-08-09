@@ -1,4 +1,4 @@
-package com.gara.hellodemo.Proxy;
+package com.gara.hellodemo.design_pattern.proxy;
 
 /**
  * @description: 接口实现测试类 小哥哥加点注释吧~
