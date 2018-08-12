@@ -5,7 +5,7 @@
 *.ipr
 *.iws
 target/*
-out
+# out
 
 
 # Eclipse Project files
@@ -13,12 +13,12 @@ out
 .project
 .settings/
 
-bin/
-gen/
-local.properties
+# bin/
+# gen/
+# local.properties
 
-.DS_Store
-Thumbs.db
+# .DS_Store
+# Thumbs.db
 
 *.bak
 *.tem
