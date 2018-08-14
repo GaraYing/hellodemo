@@ -1,2 +1,2 @@
 # hellodemo
-This is  made for jenkins test
+This is  made for jenkins test and code store daily
