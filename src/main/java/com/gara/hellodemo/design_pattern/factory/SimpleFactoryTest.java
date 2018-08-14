@@ -2,6 +2,9 @@ package com.gara.hellodemo.design_pattern.factory;
 
 import org.springframework.util.StringUtils;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @description: 简单工厂类测试
  * @author: GaraYing
@@ -12,5 +15,8 @@ public class SimpleFactoryTest {
     public static void main(String[] args) {
         Car car = new SimpleFactory().getCar("ddd");
         System.out.println(car!=null?car.getCar():"未匹配");
+
+        Map<String, Object> map = new HashMap<String, Object>();
+
     }
 }
