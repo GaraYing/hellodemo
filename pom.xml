@@ -35,6 +35,13 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+		<!--基于这个spring-boot-starter-web，Spring Boot 形成了该应用程序的以下观点：
+				1. 使用 Tomcat 作为嵌入式 Web 服务器容器
+				2. 使用 Hibernate 进行对象-关系映射 (ORM)
+				3. 使用 Apache Jackson 绑定 JSON
+				4. 使用 Spring MVC 作为 REST 框架
+		-->
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
