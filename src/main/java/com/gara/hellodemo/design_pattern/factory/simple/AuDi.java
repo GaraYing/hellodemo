@@ -1,4 +1,4 @@
-package com.gara.hellodemo.design_pattern.factory;
+package com.gara.hellodemo.design_pattern.factory.simple;
 
 /**
  * @description: 奥迪

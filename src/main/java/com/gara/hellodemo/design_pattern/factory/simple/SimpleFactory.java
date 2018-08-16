@@ -1,4 +1,8 @@
-package com.gara.hellodemo.design_pattern.factory;
+package com.gara.hellodemo.design_pattern.factory.simple;
+
+import com.gara.hellodemo.design_pattern.factory.simple.AuDi;
+import com.gara.hellodemo.design_pattern.factory.simple.Bmw;
+import com.gara.hellodemo.design_pattern.factory.simple.Car;
 
 /**
  * @description: 工厂类

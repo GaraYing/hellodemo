@@ -1,6 +1,4 @@
-package com.gara.hellodemo.design_pattern.factory;
-
-import org.springframework.util.StringUtils;
+package com.gara.hellodemo.design_pattern.factory.simple;
 
 import java.util.HashMap;
 import java.util.Map;
