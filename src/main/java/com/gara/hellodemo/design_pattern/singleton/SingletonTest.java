@@ -1,7 +1,5 @@
 package com.gara.hellodemo.design_pattern.singleton;
 
-import org.springframework.util.Assert;
-
 /**
  * @description: TODO 单例模式测试
  * @author: GaraYing
@@ -15,5 +13,13 @@ public class SingletonTest {
 
         System.out.println(SingletonDemo3.getInstance());
 
+        System.out.println(SingletonDemo5.INSTANCE);
+        System.out.println(SingletonDemo5.INSTANCE);
+
+        System.out.println(SingletonDemo5.getInstance());
+        System.out.println(SingletonDemo5.getInstance());
+
+
+        SingletonDemo5.INSTANCE.sayHello("王二小");
     }
 }

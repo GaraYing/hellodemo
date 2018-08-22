@@ -24,6 +24,7 @@ public class SingletonDemo3 {
     }
 
     // 2. 构造方法私有化
+    // 如果不私有化，会有一个模式的无参构造，就意味着代码随时可以new出来！！！
     private SingletonDemo3() {
     }
 
