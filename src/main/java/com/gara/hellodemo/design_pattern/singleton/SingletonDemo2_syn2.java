@@ -13,6 +13,7 @@ public class SingletonDemo2_syn2 {
     private SingletonDemo2_syn2() {
     }
 
+
     public static SingletonDemo2_syn2 getInstance() {
 
         if (singletonDemo2 == null) {
