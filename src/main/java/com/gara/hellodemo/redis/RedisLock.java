@@ -32,7 +32,7 @@ public class RedisLock {
             long end = System.currentTimeMillis() + timeout;
             String value = UUID.randomUUID().toString();
             while (System.currentTimeMillis() < end) { // 阻塞
-                if (jedis.setnx(key, value) == 1) {
+                if (jedis.setnx(key, value) == 1) {// setnx() nx=not exit key值存在是返回0，不存在返回1
                     jedis.expire(key, timeout);
                     // 锁设置成功 redis 设置成功
                     return value;
