@@ -20,7 +20,7 @@ public class CustomDateConverter {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        if (StringUtils.isEmpty(date)){
+        if (!StringUtils.isEmpty(date)){
             result = dateFormat.format(date);
         }
         return result;

@@ -3,6 +3,7 @@ package com.gara.hellodemo.redis;
 import org.springframework.boot.autoconfigure.cache.CacheProperties;
 import redis.clients.jedis.Jedis;
 
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
@@ -17,7 +18,9 @@ public class RedisTest {
         try {
             Jedis jedis = RedisUtils.getJedis();
 
-            System.out.println(jedis.getrange("myset", 0, -1).length());
+            Set<String> set = new LinkedHashSet<>();
+            set.add("sss");
+            System.out.println(jedis.getrange("myzset", 0, -1));
         } catch (Exception e) {
             e.printStackTrace();
         }

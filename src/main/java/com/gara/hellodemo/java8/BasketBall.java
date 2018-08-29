@@ -9,6 +9,6 @@ package com.gara.hellodemo.java8;
 public class BasketBall implements Ball {
     @Override
     public void play() {
-
+        System.out.println("打篮球******");
     }
 }
