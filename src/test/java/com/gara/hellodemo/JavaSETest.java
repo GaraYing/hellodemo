@@ -4,10 +4,9 @@ import org.apache.tomcat.util.codec.binary.StringUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Objects;
+import java.sql.Timestamp;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @description: for test
@@ -58,6 +57,23 @@ public class JavaSETest {
 
 //        int hashcode = Objects.hashCode("aa".toString()) ^ Objects.hashCode(map.get("aa"));
 //        System.out.println("hashcode=========="+hashcode);
+
+    }
+
+    /**
+     * 测试操作数据自增原子性
+     */
+    @Test
+    public void testAtom(){
+
+        AtomicInteger integerGenernator = new AtomicInteger();
+//        int iid = integerGenernator.incrementAndGet() + 10000;
+        for (int i = 0; i < 10; i++) {
+            int iid = integerGenernator.incrementAndGet() + 10000;
+            System.out.println(iid);
+//            System.out.println(new Timestamp(new Date().getTime())
+
+        }
     }
 
 }
