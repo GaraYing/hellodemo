@@ -1,0 +1,28 @@
+package com.gara.hellodemo.java8.lambda;
+
+/**
+ * @description: TODO
+ * @author: GaraYing
+ * @create: 2018-08-31 18:05
+ **/
+
+public class Person {
+    private String firstName;
+    private String lastName;
+
+    public Person() {
+    }
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+}
