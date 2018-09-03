@@ -1,14 +1,14 @@
 package com.gara.hellodemo.design_pattern.template;
 
 /**
- * @description: TODO 模板模式
+ * @description: 模板模式
  * @author: GaraYing
  * @create: 2018-08-29 19:17
  **/
 //冲饮料
 public abstract class BeveGrage {
 
-    // 不能吧被重写
+    // 不能被重写
     public final void create(){
         // 1. 把水烧开
         boildWater();

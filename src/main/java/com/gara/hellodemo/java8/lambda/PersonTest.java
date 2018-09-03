@@ -12,5 +12,6 @@ public class PersonTest {
         PersonFactory<Person> personFactory = Person::new;
         Person person = personFactory.create("Peter","Parker");
         System.out.println(person.toString());
+
     }
 }

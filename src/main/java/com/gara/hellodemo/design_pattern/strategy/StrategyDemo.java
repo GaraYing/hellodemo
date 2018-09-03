@@ -4,7 +4,7 @@ import javax.script.Compilable;
 import java.util.Comparator;
 
 /**
- * @description: TODO
+ * @description: 策略模式
  * @author: GaraYing
  * @create: 2018-08-24 17:57
  **/

@@ -1,4 +1,4 @@
-package com.gara.hellodemo.java8.lambda;
+package com.gara.hellodemo.java8.functional;
 
 /**
  * @description: 函数相关
