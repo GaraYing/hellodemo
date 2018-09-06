@@ -2,6 +2,7 @@ package com.gara.hellodemo.cotroller;
 
 import com.gara.hellodemo.cotroller.base.BaseController;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,11 @@ public class HelloController extends BaseController {
         return "hello"+this.getIp2(request);
     }
 
+
+    @GetMapping("/getIp")
+    public String getIp(){
+        return  null;
+    }
 
 
     private String getIpAddr(HttpServletRequest request) {

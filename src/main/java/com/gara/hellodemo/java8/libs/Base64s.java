@@ -21,6 +21,5 @@ public class Base64s {
                 Base64.getDecoder()
                       .decode(encoded), StandardCharsets.UTF_8);
         System.out.println(decoded);
-
     }
 }
