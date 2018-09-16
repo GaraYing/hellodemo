@@ -15,10 +15,10 @@ import reactor.core.publisher.Flux;
 @RequestMapping
 public class MessageController {
 
-    public Flux<Message> allMessage() {
-        return Flux.just(Co
-            Message.builder().body("hello Spring 5").build(),
-            Message.builder().body("hello Spring Boot 2").build()
-        );
-    }
+//    public Flux<Message> allMessage() {
+//        return Flux.just(
+//            Message.builder().body("hello Spring 5").build(),
+//            Message.builder().body("hello Spring Boot 2").build()
+//        );
+//    }
 }
