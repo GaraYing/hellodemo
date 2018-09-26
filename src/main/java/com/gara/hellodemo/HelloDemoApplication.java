@@ -6,6 +6,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class HelloDemoApplication {
 
+    /*
+        自描述信息：（Accept）
+        源码路径 EnableWebMvc -> DelegatingWebMvcConfiguration -> WebMvcConfigurationSupport # addDefaultHttpMessageConverters
+        所有的HTTP自描述信息处理器均在MessageConverters ，这个集合会传递到 RequestMappingHandlerAdapter，最终控制输出
+        以application/json为例，Spring Boot默认使用Jackson2的序列化方法
+    */
+
     public static void main(String[] args) {
         SpringApplication.run(HelloDemoApplication.class, args);
     }
