@@ -111,10 +111,10 @@
 			<scope>compile</scope>
 		</dependency>
 		<!-- jackson2XmlPresent -->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
-		</dependency>
+		</dependency>-->
 	</dependencies>
 
 	<build>
