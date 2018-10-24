@@ -5,6 +5,8 @@ import java.util.stream.Stream;
 
 /**
  * @description: 空指针异常处理
+ * Optional<T> 类(java.util.Optional) 是一个容器类，代表一个值存在或不存在，
+ * null 表示一个值不存在，现在 Optional 可以更好的表达这个概念。并且可以避免空指针异常
  * @author: GaraYing
  * @create: 2018-09-03 16:14
  **/
