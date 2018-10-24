@@ -10,7 +10,7 @@
 	<!-- 版本信息 -->
 	<version>0.0.1-SNAPSHOT</version>
 	<!-- 默认是jar包 jar/war/maven-plugin -->
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>hellodemo</name>
 	<description>Demo project for Spring Boot</description>
