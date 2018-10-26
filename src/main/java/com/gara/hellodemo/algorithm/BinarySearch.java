@@ -14,7 +14,7 @@ public class BinarySearch {
         int[] arr = {6, 12, 33, 87, 90, 97, 108, 561};
         System.out.println(binarySearch(arr, 87));
         System.out.println(binarySearch(arr, 87, 0, arr.length - 1));
-//        System.out.println(binarySearch(arr, 3, 87, arr.length - 1));
+        System.out.println(binarySearch(arr, 3, 87, arr.length - 1));
     }
 
     public static int binarySearch(int[] data, int x) {
@@ -34,7 +34,7 @@ public class BinarySearch {
 
     public static int binarySearch(int[] data, int x, int low, int high) {
         int mid = (low + high) / 2;
-        if (x < data[low] || x > data[high] || low > high) return -1;
+        if ( low > high || x < data[low] || x > data[high]) return -1;
         if (x < data[mid]) {
             return binarySearch(data, x, low, mid - 1);
         } else if (x > data[mid]) {
