@@ -76,4 +76,41 @@ public class JavaSETest {
         }
     }
 
+    @Test
+    public void testMapCreateTime() {
+        final long REPS = 100000;
+        long t1 = System.currentTimeMillis();
+        System.out.print("Hashtable");
+        for(long i = 0; i < REPS; i++)
+            new Hashtable();
+        long t2 = System.currentTimeMillis();
+        System.out.println(": " + (t2 - t1));
+        t1 = System.currentTimeMillis();
+        System.out.print("TreeMap");
+        for(long i = 0; i < REPS; i++)
+            new TreeMap();
+        t2 = System.currentTimeMillis();
+        System.out.println(": " + (t2 - t1));
+        t1 = System.currentTimeMillis();
+        System.out.print("HashMap");
+        for(long i = 0; i < REPS; i++)
+            new HashMap();
+        t2 = System.currentTimeMillis();
+        System.out.println(": " + (t2 - t1));
+    }
+
+    @Test
+    public void testArraysFunctions(){
+        byte[] bytes = {95,96,97,98};
+        Arrays.sort(bytes);
+        System.out.println(bytes);
+
+        String ssource =
+                "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
+                        "abcdefghijklmnopqrstuvwxyz";
+        char[] src = ssource.toCharArray();
+        Random r = new Random();
+        int rnd = Math.abs(r.nextInt()) % src.length;
+        System.out.println(rnd);
+    }
 }
