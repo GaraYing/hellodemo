@@ -1,4 +1,4 @@
-package com.gara.hellodemo.flux;
+package com.gara.hellodemo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

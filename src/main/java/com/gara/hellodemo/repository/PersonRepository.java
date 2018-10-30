@@ -1,4 +1,4 @@
-package com.gara.hellodemo;
+package com.gara.hellodemo.repository;
 
 import com.gara.hellodemo.domain.Person;
 import org.springframework.stereotype.Repository;
@@ -26,6 +26,8 @@ public class PersonRepository {
         // Id 从1开始
         Long id = idGenernator.incrementAndGet();
         person.setPersonId(id);
+        // 1 -> user
+        // 1 -> user2 -> user return
         return repository.put(id, person) == null;
     }
 
