@@ -104,7 +104,12 @@ public class JavaSETest {
         byte[] bytes = {95,96,97,98};
         Arrays.sort(bytes);
         System.out.println(bytes);
-
+        Set<String> sets = Collections.emptySet();
+//        set.add("WX"); // java.lang.UnsupportedOperationException 此方式不允许修改集合，emptyMap/emptyList等类似
+        Set<String> set = new HashSet<>();
+        set.add(null);
+        set.add("sss");
+        System.out.println(set);
         String ssource =
                 "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
                         "abcdefghijklmnopqrstuvwxyz";
