@@ -37,13 +37,12 @@ public class MyClassLoader extends ClassLoader{
      * @return
      */
     @Nullable
-    private byte[] loadClassData(String className) throws IOException {
+    private byte[] loadClassData(String className) {
         this.className = className;
         String fileName = root + File.separatorChar
                 + className.replace('.', File.separatorChar) + ".class";
-        InputStream ins = null;
         try {
-            ins = new FileInputStream(fileName);
+            InputStream ins = new FileInputStream(fileName);
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             int bufferSize = 1024;
             byte[] buffer = new byte[bufferSize];
@@ -54,8 +53,6 @@ public class MyClassLoader extends ClassLoader{
             return baos.toByteArray();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            ins.close();
         }
         return null;
     }
